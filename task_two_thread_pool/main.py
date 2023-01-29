@@ -57,7 +57,11 @@ def multiple_threads():
     thread_three.join()
 
 
-# TODO to be completed
+# TODO Now that we can save references to thread objects lets add them to a list
+#   this will allow us to create a 'pool' of threads
+#   either running or task, waiting to give results back or ready for a new task
+
+# Omit this code
 def thread_pool():
     pool = []
     for _ in range(3):
@@ -69,7 +73,7 @@ def thread_pool():
         thread.join()
 
 
-# TODO to be completed
+# TODO Use Python libraries to accomplish the same task as above
 def thread_pool_executor():
     with ThreadPoolExecutor(max_workers=3) as executor:
         futures = []
